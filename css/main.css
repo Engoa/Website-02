@@ -1,1 +1,357 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+/* font-family: 'Poppins', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+/* font-family: 'Open Sans', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: #00252e;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.logo {
+  max-width: 25%;
+  height: auto;
+  padding: 2rem;
+}
+
+.cta-btn {
+  color: #ff52bf;
+  border-radius: 2rem;
+  margin-right: 1rem;
+  border: 1px solid #ff52bf;
+  text-decoration: none;
+  padding: 0.3rem 1.5rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.first-section {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.first-section h1 {
+  font-size: 2rem;
+}
+
+.first-section p {
+  margin-bottom: 3rem;
+}
+
+.section-btns {
+  color: #f5faff;
+  background: #ff52bf;
+  text-decoration: none;
+  border: 1px solid #ff52bf;
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.first-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 7rem;
+}
+
+.first-img img {
+  max-width: 85%;
+  height: auto;
+}
+
+.mid-container1 {
+  text-align: center;
+  padding: 5rem;
+  margin-top: 5rem;
+}
+
+.mid-container1 h1 {
+  font-size: 5rem;
+  margin: 0%;
+}
+
+.mid-container1 h1::before {
+  content: url(/images/icon-communities.png);
+  display: block;
+  position: relative;
+  top: 2rem;
+  right: 5.5rem;
+}
+
+.mid-container1 p {
+  opacity: 0.6;
+}
+
+.mid-container2 {
+  text-align: center;
+}
+
+.mid-container2 h1 {
+  font-size: 5rem;
+  margin: 0%;
+}
+
+.mid-container2 h1::before {
+  content: url(/images/icon-messages.png);
+  display: block;
+  position: relative;
+  top: 1.5rem;
+  right: 6rem;
+}
+
+.mid-container2 p {
+  opacity: 0.6;
+}
+
+.grow-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20rem;
+}
+
+.grow-img img {
+  max-width: 85%;
+  height: auto;
+}
+
+.growtext {
+  text-align: center;
+  margin: 6rem 1rem;
+}
+
+.growtext p {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.flow-img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 23rem;
+}
+
+.flow-img-container img {
+  max-width: 85%;
+  height: auto;
+}
+
+.flowtext {
+  text-align: center;
+  margin: 6rem 1rem;
+}
+
+.flowtext p {
+  margin-top: 1rem;
+}
+
+.users-img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 18rem;
+}
+
+.users-img-container img {
+  max-width: 85%;
+  height: auto;
+}
+
+.userstext {
+  text-align: center;
+  margin: 6rem 1rem;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+.community {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20rem;
+}
+
+.community h1 {
+  text-align: center;
+}
+
+.community span {
+  margin-left: 1.4rem;
+}
+
+.community a {
+  margin-top: 1.7rem;
+}
+
+.footer-img {
+  background: #00252e;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: absolute;
+  padding-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  color: #f5faff;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer-bg {
+  background: #00252e;
+  padding-bottom: 1rem;
+  margin: 15rem 0 0 0;
+}
+
+.newsletter {
+  color: #f5faff;
+  text-align: center;
+  padding: 4rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  top: 10rem;
+}
+
+.newsletter h2 {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+.newsletter h2,
+.newsletter p {
+  text-align: left;
+}
+
+.newsletter input {
+  background: #f5faff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 7rem;
+  margin-top: 2rem;
+  margin-bottom: 1.8rem;
+}
+
+.newsletter-btn {
+  padding: 0.7rem 2.2rem;
+  margin-left: 12rem;
+  color: #f5faff;
+  background: #ff52bf;
+  text-decoration: none;
+  border: 1px solid #ff52bf;
+  border-radius: 0.5rem;
+}
+
+.footer {
+  margin-top: 5rem;
+  padding: 4rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #f5faff;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  max-width: 16rem;
+}
+
+.footer span {
+  margin-top: 1.5rem;
+}
+
+.footer .phone::before {
+  content: url(/images/icon-phone.png);
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.footer .email::before {
+  content: url(/images/icon-email.png);
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.footer img {
+  -webkit-filter: invert(100%) sepia(3%) saturate(238%) hue-rotate(350deg) brightness(114%) contrast(100%);
+          filter: invert(100%) sepia(3%) saturate(238%) hue-rotate(350deg) brightness(114%) contrast(100%);
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 1rem;
+  margin-left: 2.3rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  color: #f5faff;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=main.css.map */
