@@ -40,6 +40,7 @@ h1 {
   max-width: 35%;
   height: auto;
   padding: 2rem;
+  margin-right: 1rem;
 }
 
 .cta-btn {
@@ -288,7 +289,6 @@ footer {
 
 .newsletter-btn {
   padding: 0.7rem 3rem;
-  margin-left: 10rem;
   color: #f5faff;
   background: #ff52bf;
   text-decoration: none;
