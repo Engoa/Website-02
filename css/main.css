@@ -8,14 +8,26 @@
 }
 
 a {
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+}
+
+a:hover {
   font-weight: bold;
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
 }
 
 body {
   font-family: "Open Sans", sans-serif;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "Poppins", sans-serif;
   color: #00252e;
 }
@@ -47,12 +59,29 @@ h1 {
   text-decoration: none;
   padding: 0.3rem 1.3rem;
   font-family: "Open Sans", sans-serif;
+  background-color: white;
+}
+
+.cta-btn:hover {
+  background: #ff52bf;
+  color: white;
 }
 
 .first-section {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   margin: 3rem 0.5rem;
+  padding-bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .first-section h1 {
@@ -63,11 +92,14 @@ h1 {
   margin-bottom: 3rem;
 }
 
-.section-btns {
+.first-section a {
+  font-size: 1.15rem;
+}
+
+.section-btn {
   color: #f5faff;
   background: #ff52bf;
   text-decoration: none;
-  border: 1px solid #ff52bf;
   border-radius: 2rem;
   padding: 0.5rem 1.5rem;
 }
@@ -83,8 +115,7 @@ h1 {
 }
 
 .first-img img {
-  max-width: 85%;
-  height: auto;
+  max-width: 90%;
 }
 
 /* First Media Query */
@@ -101,23 +132,21 @@ h1 {
     max-width: 70%;
     margin: 0 auto;
   }
-  .section-btns {
+  .section-btn {
     padding: 1rem 3rem;
-  }
-  .first-img img {
-    max-width: 90%;
   }
 }
 
+/* End of First Media Query */
 .maincontainer {
   text-align: center;
 }
 
-.mid-container1 h1 {
+.mid-container1 h2 {
   font-size: 5rem;
 }
 
-.mid-container1 h1::before {
+.mid-container1 h2::before {
   content: url(/images/icon-communities.png);
   display: block;
   position: relative;
@@ -129,11 +158,11 @@ h1 {
   opacity: 0.6;
 }
 
-.mid-container2 h1 {
+.mid-container2 h2 {
   font-size: 5rem;
 }
 
-.mid-container2 h1::before {
+.mid-container2 h2::before {
   content: url(/images/icon-messages.png);
   display: block;
   position: relative;
@@ -161,7 +190,7 @@ h1 {
         align-content: center;
     margin-top: 10rem;
   }
-  .maincontainer h1 {
+  .maincontainer h3 {
     font-size: 6rem;
   }
   .maincontainer p {
@@ -169,6 +198,7 @@ h1 {
   }
 }
 
+/* End of Second Media Query */
 .grow-img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,7 +211,6 @@ h1 {
 
 .grow-img img {
   max-width: 85%;
-  height: auto;
 }
 
 .growtext {
@@ -192,6 +221,10 @@ h1 {
 .growtext p {
   font-size: 1.1rem;
   margin-top: 1rem;
+}
+
+.growtext h3 {
+  font-size: 3rem;
 }
 
 .flow-img-container {
@@ -206,7 +239,6 @@ h1 {
 
 .flow-img-container img {
   max-width: 85%;
-  height: auto;
 }
 
 .flowtext {
@@ -216,6 +248,10 @@ h1 {
 
 .flowtext p {
   margin-top: 1rem;
+}
+
+.flowtext h3 {
+  font-size: 3rem;
 }
 
 .users-img-container {
@@ -230,7 +266,6 @@ h1 {
 
 .users-img-container img {
   max-width: 85%;
-  height: auto;
 }
 
 .userstext {
@@ -238,8 +273,12 @@ h1 {
   margin: 3rem 1rem;
 }
 
-p {
+.userstext p {
   margin-top: 1rem;
+}
+
+.userstext h3 {
+  font-size: 3rem;
 }
 
 .community {
@@ -256,8 +295,9 @@ p {
   margin-top: 20rem;
 }
 
-.community h1 {
+.community h2 {
   text-align: center;
+  font-size: 2rem;
 }
 
 .community a {
@@ -326,7 +366,7 @@ p {
     margin-top: 10rem;
     font-size: 2rem;
   }
-  .community h1 {
+  .community h2 {
     font-size: 3rem;
   }
   .community a {
@@ -334,6 +374,7 @@ p {
   }
 }
 
+/* End of Third Media Query */
 .footer-img {
   background: #00252e;
   -webkit-transform: rotate(180deg);
@@ -373,12 +414,14 @@ footer {
   top: 10rem;
 }
 
-.newsletter h2 {
+.newsletter h4 {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
+  color: #f5faff;
+  font-size: 1.5rem;
 }
 
-.newsletter h2,
+.newsletter h4,
 .newsletter p {
   text-align: left;
 }
@@ -387,10 +430,10 @@ footer {
   background: #f5faff;
   border: none;
   border-radius: 0.5rem;
-  text-align: center;
-  padding: 1rem;
   margin-top: 2rem;
   margin-bottom: 1.8rem;
+  padding: 1rem 11rem 1rem 1rem;
+  text-align: left;
 }
 
 .newsletter-btn {
@@ -398,7 +441,6 @@ footer {
   color: #f5faff;
   background: #ff52bf;
   text-decoration: none;
-  border: 1px solid #ff52bf;
   border-radius: 0.5rem;
 }
 
@@ -413,9 +455,9 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #f5faff;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer p {
@@ -451,12 +493,8 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   gap: 1.5rem;
-  margin-left: 2.3rem;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .social-icons a {
@@ -488,11 +526,7 @@ footer {
             align-items: center;
     margin-right: 5rem;
   }
-  .containerfooter input {
-    max-width: 20%;
-    padding: 1rem 7rem;
-  }
-  .newsletter h2 {
+  .newsletter h4 {
     margin-right: auto;
     padding-left: 7.3rem;
   }
@@ -509,13 +543,7 @@ footer {
     margin-top: 14rem;
     margin-right: 15rem;
   }
-  .social-icons {
-    position: relative;
-    top: 19rem;
-    left: 24rem;
-  }
-  .social-icons a {
-    font-size: 2rem;
-  }
 }
+
+/* End of Fourth Media Query */
 /*# sourceMappingURL=main.css.map */
